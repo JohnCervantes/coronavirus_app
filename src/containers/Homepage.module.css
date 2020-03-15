@@ -1,0 +1,28 @@
+.Paper {
+  width: 350px;
+  max-height: 500px;
+  overflow: auto;
+  margin: 20px;
+  padding: 10px;
+  background-color: "#330033";
+  color: white;
+}
+
+.PaperSummary {
+  height: auto;
+  width: 350px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #330033;
+  color: white;
+}
+
+.PaperRight {
+  width: 350px;
+  height: 770px;
+  overflow: auto;
+  padding: 20px;
+  margin: 20px;
+  background-color: #330033;
+  color: white;
+}
