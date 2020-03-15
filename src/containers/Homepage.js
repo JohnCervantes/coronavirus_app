@@ -128,6 +128,7 @@ class Homepage extends Component {
         .map(country => {
           return (
             <TotalDeaths
+            clicked={() => this.checkDataForThisCountry(country.country)}
               name={country.country}
               totalDeaths={country.totalDeaths}
             ></TotalDeaths>
@@ -143,6 +144,7 @@ class Homepage extends Component {
         .map(country => {
           return (
             <TotalRecovered
+            clicked={() => this.checkDataForThisCountry(country.country)}
               name={country.country}
               totalRecovered={country.totalRecovered}
             ></TotalRecovered>

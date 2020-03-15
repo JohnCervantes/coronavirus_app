@@ -18,6 +18,3 @@ function App() {
 
 export default App;
 
-// https://www.heraldsun.com.au/lifestyle/health/coronavirus-survival-guide-how-to-protect-yourself/news-story/2cdefa3c0ccdf5e4972c44177c925505
-// https://www.who.int/emergencies/diseases/novel-coronavirus-2019
-// https://people.com/health/coronavirus-ways-to-help-your-community/
