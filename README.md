@@ -1,3 +1,16 @@
+# Coronavirus stat tracker web app
+
+A web application built using React, Node.js and Material-UI that tracks the latest status and news about the coronavirus.
+
+Demo: https://youtu.be/bo37whNg9LU
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
