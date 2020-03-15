@@ -2,6 +2,7 @@
 
 A web application built using React, Node.js and Material-UI that tracks the latest status and news about the coronavirus.
 
+Project is live: https://johncervantes.github.io/coronavirus_app/
 Demo: https://youtu.be/32unxyCE_60
 
 
