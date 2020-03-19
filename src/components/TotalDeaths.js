@@ -1,10 +1,14 @@
 import React from "react";
+import classes from "../containers/Homepage.module.css";
+
 
 const TotalDeaths = props => {
   return (
-    <li onClick={props.clicked} style={{cursor: "pointer", borderBottom: "1px solid white", padding: "5px" }}>
+    <div className={classes.ListStyle}>
+    <li  onClick={props.clicked}>
       {props.name}: {props.totalDeaths}
     </li>
+    </div>
   );
 };
 

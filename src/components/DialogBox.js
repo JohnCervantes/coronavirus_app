@@ -29,10 +29,11 @@ export default function AlertDialogSlide(props) {
         >
           {props.data.country}'s coronavirus complete breakdown:
         </DialogTitle>
-        <DialogContent className={classes.DialogContent}>
+        <DialogContent>
           <DialogContentText
             color="inherit"
             id="alert-dialog-slide-description"
+            className={classes.DialogContent}
           >
             <span>
               <strong>Total number of all cases: </strong>

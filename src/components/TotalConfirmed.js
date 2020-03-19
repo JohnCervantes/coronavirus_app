@@ -1,17 +1,13 @@
 import React from "react";
+import classes from "../containers/Homepage.module.css";
 
 const TotalConfirmed = props => {
   return (
-    <li
-      onClick={props.clicked}
-      style={{
-        cursor: "pointer",
-        borderBottom: "1px solid white",
-        padding: "5px"
-      }}
-    >
-      {props.name}: <span style={{ color: "red" }}>{props.totalCases}</span>
-    </li>
+    <div className={classes.ListStyle}>
+      <li onClick={props.clicked}>
+        {props.name}: <span style={{ color: "red" }}>{props.totalCases}</span>
+      </li>
+    </div>
   );
 };
 

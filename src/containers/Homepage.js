@@ -29,6 +29,7 @@ class Homepage extends Component {
       )
       .then(res => {
         this.setState({ data: res.data, dataReceived: true });
+        console.log(res.data.breakdown);
       })
       .catch(err => {
         console.log(err);
@@ -128,7 +129,7 @@ class Homepage extends Component {
         .map(country => {
           return (
             <TotalDeaths
-            clicked={() => this.checkDataForThisCountry(country.country)}
+              clicked={() => this.checkDataForThisCountry(country.country)}
               name={country.country}
               totalDeaths={country.totalDeaths}
             ></TotalDeaths>
@@ -144,7 +145,7 @@ class Homepage extends Component {
         .map(country => {
           return (
             <TotalRecovered
-            clicked={() => this.checkDataForThisCountry(country.country)}
+              clicked={() => this.checkDataForThisCountry(country.country)}
               name={country.country}
               totalRecovered={country.totalRecovered}
             ></TotalRecovered>
@@ -211,7 +212,7 @@ class Homepage extends Component {
             <Grid container justify="center" spacing={3}>
               <Grid item>
                 <Paper
-                  style={{ backgroundColor: "#330033", color: "white" }}
+                  style={{ backgroundColor: "#93228D", color: "white" }}
                   className={classes.PaperSummary}
                   elevation={3}
                 >
@@ -220,7 +221,7 @@ class Homepage extends Component {
                 </Paper>
                 <Paper
                   className={classes.Paper}
-                  style={{ backgroundColor: "#330033", color: "white" }}
+                  style={{ backgroundColor: "#93228D", color: "white" }}
                   elevation={3}
                 >
                   <h3>Confirmed cases:</h3>
@@ -239,7 +240,7 @@ class Homepage extends Component {
 
               <Grid item>
                 <Paper
-                  style={{ backgroundColor: "#330033" }}
+                  style={{ backgroundColor: "#93228D" }}
                   className={classes.PaperRight}
                   elevation={3}
                 >
@@ -259,19 +260,17 @@ class Homepage extends Component {
 
               <Grid item>
                 <Paper
-                  style={{ backgroundColor: "#330033", color: "white" }}
+                  style={{ backgroundColor: "#93228D", color: "white" }}
                   className={classes.PaperRight}
                   elevation={3}
                 >
                   <h3 style={{ color: "#80ff00" }}>Total Recovered:</h3>
-                  <ul
-                    style={{
-                      listStyleType: "none",
+                  <ul style={{
+                      listStyleType: "none",  
                       margin: "auto",
                       padding: "0",
                       color: "white"
-                    }}
-                  >
+                    }}>
                     {totalRecoveredByCountrySorted}
                   </ul>
                 </Paper>
@@ -290,5 +289,3 @@ class Homepage extends Component {
 }
 
 export default Homepage;
-
-

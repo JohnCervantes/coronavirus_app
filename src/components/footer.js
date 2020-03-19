@@ -128,7 +128,8 @@ const styles = () => ({
     backgroundColor: "#0099CC",
     borderTop: "solid 3px #998643",
     paddingTop: "16px",
-    overflowX: "hidden"
+    overflowX: "hidden",
+    
   },
   footerSections: {
     margin: "0 16px"

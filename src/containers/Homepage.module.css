@@ -26,3 +26,16 @@
   background-color: #330033;
   color: white;
 }
+
+.ListStyle {
+  border-bottom: 1px solid white;
+  list-style-type: none;
+  color: white;
+  padding: 10px 0;
+  margin: auto;
+}
+
+.ListStyle :hover {
+  background-color: #330033;
+  cursor: pointer;
+}
